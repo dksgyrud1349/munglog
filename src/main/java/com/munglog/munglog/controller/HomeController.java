@@ -1,7 +1,7 @@
-package com.munglog.controller;
+package com.munglog.munglog.controller;
 
-import com.munglog.document.Log;
-import com.munglog.repository.LogRepository;
+import com.munglog.munglog.document.Log;
+import com.munglog.munglog.repository.LogRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

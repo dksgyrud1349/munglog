@@ -1,4 +1,4 @@
-package com.munglog.entity;
+package com.munglog.munglog.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

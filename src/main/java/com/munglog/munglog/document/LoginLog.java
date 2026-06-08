@@ -1,4 +1,4 @@
-package com.munglog.document;
+package com.munglog.munglog.document;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
