@@ -1,10 +1,10 @@
-package com.munglog.mapper;
+package com.munglog.munglog.mapper;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.munglog.entity.Member;
+import com.munglog.munglog.entity.Member;
 
 @Mapper
 public interface MemberMapper {
