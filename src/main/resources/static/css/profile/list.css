@@ -1,0 +1,149 @@
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+
+/* LIST */
+.dog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+/* CARD */
+.dog-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    background: #fff;
+    padding: 16px;
+    border-radius: 16px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/* IMAGE */
+.dog-avatar {
+    width: 80px;
+    height: 80px;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+    border-radius: 50%;
+
+    background: #f4f4f4;
+}
+
+.dog-avatar img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* INFO */
+.dog-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+}
+
+.meta {
+    margin-top: 4px;
+
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* BUTTONS */
+.actions {
+    display: flex;
+    gap: 8px;
+
+    flex-shrink: 0;
+}
+
+
+/* ===================== */
+/* TABLET */
+/* ===================== */
+
+@media (max-width: 768px) {
+
+    .header h2 {
+        font-size: 24px;
+    }
+
+    .dog-avatar {
+        width: 70px;
+        height: 70px;
+    }
+
+    .name {
+        font-size: 17px;
+    }
+
+    .meta {
+        font-size: 13px;
+    }
+}
+
+
+/* ===================== */
+/* MOBILE */
+/* ===================== */
+
+@media (max-width: 480px) {
+
+    .header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .header button {
+        width: 100%;
+    }
+
+    .dog-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dog-avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .actions {
+        width: 100%;
+
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .actions button {
+        flex: 1;
+        min-width: 90px;
+    }
+}

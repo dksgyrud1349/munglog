@@ -8,19 +8,19 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 @RequiredArgsConstructor
-public class HomeController {
+public class MainController {
 
     public final LogRepository logRepository;
 
     @GetMapping("/")
     public String home() {
 
-        Log log = new Log();
-        log.setMessage("hello");
+//        Log log = new Log();
+//        log.setMessage("hello");
+//
+//        logRepository.save(log);
 
-        logRepository.save(log);
-
-        return "index";
+        return "/main/main";
 
     }
 }

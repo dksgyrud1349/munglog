@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f6f7fb;
+    color: #222;
+}
+
+/* 공통 컨테이너 */
+.container {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+/* 제목 */
+h2 {
+    margin: 0;
+    font-size: 20px;
+}
