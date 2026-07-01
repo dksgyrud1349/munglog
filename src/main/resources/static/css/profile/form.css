@@ -1,0 +1,61 @@
+.dog-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 13px;
+    color: #444;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+}
+
+.current-image-box {
+    width: 180px;
+    margin: 0 auto 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.current-image-box img {
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 4px solid #fff;
+
+    box-shadow:
+            0 8px 24px rgba(0, 0, 0, 0.12);
+
+    transition: transform .2s ease;
+}
+
+.current-image-box img:hover {
+    transform: scale(1.03);
+}
+
+.image-name {
+    margin-top: 12px;
+
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+}
+
+/* 반응형 */
+@media (max-width: 480px) {
+    .container {
+        padding: 12px;
+    }
+}
